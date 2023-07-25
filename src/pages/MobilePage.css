@@ -1,0 +1,59 @@
+.avatar {
+    justify-content: right;
+    display: flex;
+    margin-right: 10%;
+    padding-top: 2%;
+}
+.avatar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.title h2 {
+    justify-content: right;
+    display: flex;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+
+.description h4 {
+    margin-top: 0;
+    justify-content: right;
+    display: flex;
+    margin-right: 10%;
+}
+
+a {
+    display: flex;
+    justify-content: left;
+    margin-left: 10%;
+    text-decoration: none;
+    color: rgb(241, 251, 138);
+    border: solid 1px rgb(241, 251, 138);
+    width: 140px;
+    padding: 1%;
+}
+
+h3 {
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+}
+
+p {
+    margin-left: 10%; 
+    margin-right: 5%;
+}
+
+p img {
+    width: 50px;
+    height: 50px;
+    opacity: 70%;
+}
+
+p img:hover {
+    transform: scale(1.1, 1.1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    opacity: 100%;
+}
