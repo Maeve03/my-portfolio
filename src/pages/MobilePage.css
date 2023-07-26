@@ -1,27 +1,30 @@
 .avatar {
-    justify-content: right;
+    margin-left: 5%;
     display: flex;
-    margin-right: 10%;
     padding-top: 2%;
 }
 .avatar img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
 }
 
-.title h2 {
-    justify-content: right;
+.title h1 {
+    margin-left: 5%;
     display: flex;
-    margin-right: 10%;
     margin-bottom: 1%;
+    font-family: 'Baskervville', serif;
+    font-weight: normal;
+    
 }
 
-.description h4 {
+.description h3 {
     margin-top: 0;
-    justify-content: right;
+    margin-left: 5%;
     display: flex;
-    margin-right: 10%;
+    font-family: 'Baskervville', serif;
+    font-weight: normal;
+    color: rgb(173, 173, 169);
 }
 
 a {
@@ -29,21 +32,25 @@ a {
     justify-content: left;
     margin-left: 10%;
     text-decoration: none;
-    color: rgb(241, 251, 138);
-    border: solid 1px rgb(241, 251, 138);
-    width: 140px;
-    padding: 1%;
+    color: rgb(132, 237, 255);
+    border: solid 1px rgb(132, 237, 255);
+    width: 125px;
+    padding: 1.5%;
+    font-size: 15px;
 }
 
 h3 {
     display: flex;
     justify-content: left;
     margin-left: 5%;
+    font-weight: 550;
+    
 }
 
 p {
     margin-left: 10%; 
     margin-right: 5%;
+    color: rgb(173, 173, 169);
 }
 
 p img {
@@ -56,4 +63,49 @@ p img:hover {
     transform: scale(1.1, 1.1);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     opacity: 100%;
+}
+
+.Experience .Company {
+    color: antiquewhite;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.Experience .Role {
+    color: rgb(173, 173, 169);
+    font-size: 17px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.Experience {
+    padding-bottom: 2%;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.Contact img {
+    width: 36px;
+    height: 36px;
+}
+
+.Contact a {
+    border: none;
+    padding: 0;
+    width: 36px;
+    margin-left: 0;
+}
+
+.Contact button {
+    text-decoration: none;
+    background: none;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    margin-right: 7px;
 }
