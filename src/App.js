@@ -1,13 +1,13 @@
 
 import './App.css';
-import MobilePage from './pages/MobilePage';
 import {useMediaQuery} from './hooks/useMediaQuery'
+import PortfolioPage from './pages/PortfolioPage';
 
 function App() {
-  let pageType = useMediaQuery('(max-width: 500px)')
+  //let pageType = useMediaQuery('(max-width: 600px)')
   return (
     <div className="App">
-        {pageType ? <MobilePage/> : <></> } 
+        <PortfolioPage/> 
     </div>
   );
 }
