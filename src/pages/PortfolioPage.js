@@ -7,7 +7,6 @@ import reactIcon from '../react.png'
 import reduxIcon from '../redux.png'
 import linkedin from '../linkedin.png'
 import instagram from '../instagram.png'
-import mail from '../mail.png'
 import materialui from '../materialui.png'
 import bootstrap from '../bootstrap.png'
 import github from '../github.png'
@@ -15,7 +14,7 @@ import git from '../git.png'
 import arrow from '../arrow.png'
 import './PortfolioPage.css'
 
-function DesktopPage() {
+function PortfolioPage() {
   return (
     <div>
         <div className='navbar'>
@@ -26,9 +25,16 @@ function DesktopPage() {
         </ul>
         </div>
         <div className='about' id='about'>
+          <div className='container'>
+          <span >
            <p>Hello .</p>
            <p>I am Arpita ,</p>
-           <p>Software Developer .</p>
+           <p>Software Engineer .</p>
+          </span>
+          <span className='visage'>
+            <span className='her' role='img'></span>
+          </span>
+          </div>
            <div className='resume' >
             <a href='Arpita Resume.pdf' target='_blank' >See My Resume<img className='arrow1' src={arrow} alt='arrow' ></img> </a>
            </div>
@@ -79,4 +85,4 @@ function DesktopPage() {
   )
 }
 
-export default DesktopPage
+export default PortfolioPage

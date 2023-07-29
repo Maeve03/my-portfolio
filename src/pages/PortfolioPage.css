@@ -35,37 +35,93 @@ border: none;
     color: rgb(163, 241, 255) ;
 }
 
-@media only screen and (max-width: 600px) {
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .visage {
+    border: 0.115rem solid #fff;
+    z-index: 1;
+    width: 13.334em;
+    height: 12.334em;
+    margin-top: 2.5% ;
+}
+
+.container .visage .her{
+    background-image: url(../dp.jpeg);
+    background-color: white;
+    background-size: cover;
+    display: block;
+    width: inherit;
+    height: inherit;
+    margin-top: -1em;
+    margin-left: -1em;
+    filter: grayscale(90%);
+}
+
+.container .visage .her:hover{
+    margin-top: -0.7em;
+    margin-left: -0.7em;
+    filter: grayscale(0%);
+    transition: cubic-bezier(0.39, 0.575, 0.565, 1) 1s;
+}
+
+@media only screen and (max-width: 775px) {
     .navbar {
         display: none;
     }
+    div.about {
+        padding: 1%;
+    }
     div.about p{
-        font-size: 25px;
+        font-size: 1.25rem;
+    }
+    div.about div.container span.visage  {
+        margin-top: 11%;
+        border: none;
+    }
+    div.about div.container span.visage span.her{
+        background-image: url(../dp.jpeg);
+        background-color: white;
+        display: block;
+        width: 8.5em;
+        height: 8.5em;
+        border-radius: 50%;
+        filter:grayscale(0%);
     }
     div.about div.resume a{
         font-size: 13px;
         width: 8.3rem;
     }
     div.about div.description p{
-        font-size: 12px;
+        font-size: 14px;
+    }
+    div.skills{
+        padding: 1%;
     }
     div.skills p{
-        font-size: 15px;
-        
+        font-size: 16px;    
     }
     div.skills p.skillsIcon img{
         height: 35px;
         width: 35px;
         filter: grayscale(0%);
     }
+    div.experience {
+        padding: 1%;
+    }
     div.experience p {
-        font-size: 15px;
+        font-size: 16px;
     }
     div.experience h3{
-        font-size: 13px;
+        font-size: 14px;
     }
     div.experience ul.items {
-        font-size: 13px;
+        font-size: 14px;
+    }
+    div.footer {
+        padding: 1%;
     }
     div.footer p{
         font-size: 15px;
@@ -79,18 +135,18 @@ border: none;
     }
   }
 
-.navbar li a:active{
-    color: rgb(163, 241, 255);
-}
-
 .about {
-    padding: 4%;
+    padding: 7%;
     padding-top: 7%;
 }
 
-.about p{
-    font-size: 35px;
+.container {
     margin-left: 15%;
+    margin-right: 7%;
+}
+
+.about p{
+    font-size: 30px;
     color: rgb(173, 173, 169)
 }
 
@@ -137,6 +193,7 @@ border: none;
 
 .about .description {
     margin-top: 5%;
+    margin-left: 15%;
 }
 
 .about .description p {
@@ -192,7 +249,8 @@ border: none;
     margin-left: 15%;
     font-weight: normal;
     font-size: 17px;
-    color: rgb(173, 173, 169)
+    color: rgb(173, 173, 169);
+    margin-right: 15%;
 }
 
 .experience h3 a{
